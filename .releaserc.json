@@ -1,0 +1,48 @@
+{
+  "branches": ["main"],
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "preset": "conventionalcommits",
+        "releaseRules": [
+          { "type": "feat", "release": "minor" },
+          { "type": "fix", "release": "patch" },
+          { "type": "chore", "release": "patch" },
+          { "type": "refactor", "release": "patch" },
+          { "type": "ci", "release": false },
+          { "type": "style", "release": false },
+          { "type": "docs", "release": false },
+          { "scope": "no-release", "release": false }
+        ]
+      }
+    ],
+    [
+      "@semantic-release/exec",
+      {
+        "verifyReleaseCmd": "echo ${nextRelease.version} > VERSION"
+      }
+    ],
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "preset": "conventionalcommits",
+        "presetConfig": {
+          "types": [
+            { "type": "feat",     "section": "Features",  "hidden": false },
+            { "type": "fix",      "section": "Fixes",     "hidden": false },
+            { "type": "chore",    "section": "Chore",     "hidden": false },
+            { "type": "refactor", "section": "Refactor",  "hidden": false }
+          ]
+        }
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "proxy": false,
+        "successComment": false
+      }
+    ]
+  ]
+}
