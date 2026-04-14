@@ -2,6 +2,11 @@ name: 💡 Feature Request
 description: Suggest an idea or improvement
 labels: [enhancement]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        > Got an idea? We're all ears! Please keep in mind the project's goal: **one file, zero extra dependencies**. Proposals that fit that philosophy are most likely to be accepted.
+
   - type: textarea
     id: problem
     attributes:

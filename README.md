@@ -1,6 +1,6 @@
 # `semantic-release` monorepo filter
 
-> Monorepo-aware `semantic-release` — one file, zero extra packages.
+> Monorepo-aware `semantic-release` filter — one file, zero extra packages.
 
 [![ci](https://github.com/ddforge/semantic-release-monorepo-filter/actions/workflows/ci.yml/badge.svg)](https://github.com/ddforge/semantic-release-monorepo-filter/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -106,7 +106,7 @@ release_package packages/other-package
 | Flag | Description |
 | ---- | ----------- |
 | `--dry-run` | 🔍 Determine next version and generate release notes; skip publish and tag |
-| `--dryRun`  | Alias for `--dry-run` |
+| `--dryRun` | Alias for `--dry-run` |
 
 ---
 
@@ -114,7 +114,7 @@ release_package packages/other-package
 
 For each commit, the script runs:
 
-```
+```bash
 git diff-tree --no-commit-id -r --name-only <hash>
 ```
 

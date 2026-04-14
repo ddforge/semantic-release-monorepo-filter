@@ -26,7 +26,7 @@ Tests use Node.js's built-in test runner (`node:test`) — no extra framework ne
 
 ## 🔧 Project structure
 
-```
+```bash
 semantic-release-monorepo-filter.cjs   # The main script — the only file users copy
 test/
   index.test.js                        # All tests live here
