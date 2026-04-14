@@ -1,11 +1,11 @@
-# semantic-release-monorepo-filter 🚀
+# `semantic-release` monorepo filter
 
 > Monorepo-aware `semantic-release` — one file, zero extra packages.
 
 [![CI](https://github.com/YOUR_ORG/semantic-release-monorepo-filter/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_ORG/semantic-release-monorepo-filter/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-`semantic-release` was designed for single-package repos. In a monorepo — where many packages share one Git history — every commit is visible to every package, so `semantic-release` releases all packages on every push, regardless of what actually changed. 😬
+`semantic-release` was designed for single-package repos. In a monorepo — where many packages share one Git history — every commit is visible to every package, so `semantic-release` releases all packages on every push, regardless of what actually changed.
 
 This script fixes that. 🎯 Drop [`semantic-release-monorepo-filter.cjs`](./semantic-release-monorepo-filter.cjs) into your monorepo and run it from each package directory. It filters the commit history down to only commits that touched that package's directory, then hands them to `semantic-release` — so each package releases independently based on its own changes.
 
