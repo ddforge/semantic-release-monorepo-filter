@@ -1,0 +1,22 @@
+name: 💬 Feedback
+description: Share feedback, a question, or a pain point
+labels: [feedback]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - General feedback
+        - Documentation
+        - Question
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Your feedback
+    validations:
+      required: true
