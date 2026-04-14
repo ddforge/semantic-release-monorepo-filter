@@ -106,7 +106,7 @@ release_package packages/other-package
 | Flag | Description |
 | ---- | ----------- |
 | `--dry-run` | 🔍 Determine next version and generate release notes; skip publish and tag |
-| `--dryRun`  | Alias for `--dry-run` |
+| `--dryRun` | Alias for `--dry-run` |
 
 ---
 
@@ -114,7 +114,7 @@ release_package packages/other-package
 
 For each commit, the script runs:
 
-```
+```bash
 git diff-tree --no-commit-id -r --name-only <hash>
 ```
 
