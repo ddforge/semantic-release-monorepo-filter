@@ -1,6 +1,6 @@
 # `semantic-release` monorepo filter
 
-> Monorepo-aware `semantic-release` — one file, zero extra packages.
+> Monorepo-aware `semantic-release` filter — one file, zero extra packages.
 
 [![ci](https://github.com/ddforge/semantic-release-monorepo-filter/actions/workflows/ci.yml/badge.svg)](https://github.com/ddforge/semantic-release-monorepo-filter/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)

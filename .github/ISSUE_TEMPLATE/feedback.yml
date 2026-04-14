@@ -2,6 +2,11 @@ name: 💬 Feedback
 description: Share feedback, a question, or a pain point
 labels: [feedback]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        > We'd love to hear from you! Use this form for general feedback, questions, or anything that doesn't fit a bug report or feature request.
+
   - type: dropdown
     id: type
     attributes:
