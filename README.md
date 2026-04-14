@@ -2,7 +2,7 @@
 
 > Monorepo-aware `semantic-release` — one file, zero extra packages.
 
-[![CI](https://github.com/YOUR_ORG/semantic-release-monorepo-filter/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_ORG/semantic-release-monorepo-filter/actions/workflows/ci.yml)
+[![ci](https://github.com/ddforge/semantic-release-monorepo-filter/actions/workflows/ci.yml/badge.svg)](https://github.com/ddforge/semantic-release-monorepo-filter/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 `semantic-release` was designed for single-package repos. In a monorepo — where many packages share one Git history — every commit is visible to every package, so `semantic-release` releases all packages on every push, regardless of what actually changed.
@@ -19,7 +19,7 @@ This script fixes that. 🎯 Drop [`semantic-release-monorepo-filter.cjs`](./sem
 
 ```bash
 curl -o scripts/semantic-release-monorepo-filter.cjs \
-  https://raw.githubusercontent.com/YOUR_ORG/semantic-release-monorepo-filter/main/semantic-release-monorepo-filter.cjs
+  https://raw.githubusercontent.com/ddforge/semantic-release-monorepo-filter/main/semantic-release-monorepo-filter.cjs
 ```
 
 Or just copy the file manually. Put it anywhere in your repo — `scripts/` is a common choice.
@@ -145,7 +145,7 @@ See [`examples/`](./examples) for ready-to-use `.releaserc.json` configurations:
 ## 🧪 Development
 
 ```bash
-git clone https://github.com/YOUR_ORG/semantic-release-monorepo-filter.git
+git clone https://github.com/ddforge/semantic-release-monorepo-filter.git
 cd semantic-release-monorepo-filter
 npm install
 npm test
