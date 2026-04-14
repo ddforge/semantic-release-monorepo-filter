@@ -1,0 +1,15 @@
+{
+  "name": "semantic-release-monorepo-filter",
+  "description": "Drop-in single-file replacement for abandoned semantic-release-monorepo. Scopes semantic-release to a subdirectory using git diff-tree.",
+  "scripts": {
+    "test": "node --test test/index.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/release-notes-generator": "^14.0.0",
+    "semantic-release": "^25.0.0"
+  }
+}
