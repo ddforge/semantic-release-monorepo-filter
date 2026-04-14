@@ -29,11 +29,27 @@
         "preset": "conventionalcommits",
         "presetConfig": {
           "types": [
-            { "type": "feat",     "section": "Features",  "hidden": false },
-            { "type": "fix",      "section": "Fixes",     "hidden": false },
-            { "type": "chore",    "section": "Chore",     "hidden": false },
-            { "type": "refactor", "section": "Refactor",  "hidden": false }
-          ]
+                {
+                "type": "feat",
+                "section": ":building_construction: Features",
+                "hidden": false
+                },
+                {
+                "type": "fix",
+                "section": ":bug: Fixes",
+                "hidden": false
+                },
+                {
+                "type": "chore",
+                "section": ":broom: Chore",
+                "hidden": false
+                },
+                {
+                "type": "refactor",
+                "section": ":recycle: Refactor",
+                "hidden": false
+                }
+            ]
         }
       }
     ],
