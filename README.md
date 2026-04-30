@@ -5,6 +5,7 @@
 [![ci](https://github.com/ddforge/semantic-release-monorepo-filter/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ddforge/semantic-release-monorepo-filter/actions/workflows/ci.yml?query=branch%3Amain)
 [![release](https://github.com/ddforge/semantic-release-monorepo-filter/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/ddforge/semantic-release-monorepo-filter/actions/workflows/release.yml?query=branch%3Amain)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Release](https://img.shields.io/github/v/release/ddforge/semantic-release-monorepo-filter?label=release&logo=github)
 
 `semantic-release` was designed for single-package repos. In a monorepo — where many packages share one Git history — every commit is visible to every package, so `semantic-release` releases all packages on every push, regardless of what actually changed.
 
